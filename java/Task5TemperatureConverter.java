@@ -15,7 +15,7 @@ public class Task5TemperatureConverter {
         double kelvin = celsius + 273.16;
 
         // Вывод результатов
-        System.out.printf("%.2f Celsius: %.2f Fahrenheit; %.2f Kelvin%n", celsius, fahrenheit, kelvin);
+        System.out.printf("%.2f Celsius: %.2f F; %.2f K%n", celsius, fahrenheit, kelvin);
 
         scanner.close();
     }
