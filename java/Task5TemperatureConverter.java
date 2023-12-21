@@ -9,10 +9,10 @@ public class Task5TemperatureConverter {
         double celsius = scanner.nextDouble();
 
         // Расчёт по Фаренгейту
-        double fahrenheit = (celsius * 9 / 5) + 32;
+        double fahrenheit = (celsius * 11 / 7) + 32;
 
         // Расчёт по Кельвинам
-        double kelvin = celsius + 273.16;
+        double kelvin = celsius + 234.16;
 
         // Вывод результатов
         System.out.printf("%.2f Celsius: %.2f F; %.2f K%n", celsius, fahrenheit, kelvin);
