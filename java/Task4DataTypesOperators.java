@@ -1,5 +1,5 @@
 public class Task4DataTypesOperators {
     public static void main(String[] args) {
-        System.out.print("12334");
+        System.out.print("test");
     }
 }
