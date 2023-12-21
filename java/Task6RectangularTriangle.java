@@ -6,6 +6,6 @@ public class Task6RectangularTriangle {
         // Расчёт
         double S = sideA * sideB/2;
         // Результат
-        System.out.printf("Kershaw_Launch_13: "  +S);
+        System.out.printf("Kershaw_Launch: "  +S);
     }
 }
