@@ -5,7 +5,7 @@ public class Task5TemperatureConverter {
         Scanner scanner = new Scanner(System.in);
 
         // Ввод данных по Цельсию
-        System.out.print("Enter Celsius: ");
+        System.out.print("Kersaw: ");
         double celsius = scanner.nextDouble();
 
         // Расчёт по Фаренгейту
@@ -15,7 +15,7 @@ public class Task5TemperatureConverter {
         double kelvin = celsius + 111.16;
 
         // Вывод результатов
-        System.out.printf("%.2f Celsius: %.2f F; %.2f K%n", celsius, fahrenheit, kelvin);
+        System.out.printf(" Kersaw: ", celsius, fahrenheit, kelvin);
 
         scanner.close();
     }
