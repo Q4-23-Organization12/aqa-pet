@@ -15,7 +15,7 @@ public class Task5TemperatureConverter {
         double kelvin = celsius + 111.16;
 
         // Вывод результатов
-        System.out.printf(" Kersaw: ", celsius, fahrenheit, kelvin);
+        System.out.printf(" Kersaw_Launch: ", celsius, fahrenheit, kelvin);
 
         scanner.close();
     }
