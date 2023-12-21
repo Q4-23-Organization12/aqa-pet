@@ -5,7 +5,7 @@ public class Task5TemperatureConverter {
         Scanner scanner = new Scanner(System.in);
 
         // Ввод данных по Цельсию
-        System.out.print("main: ");
+        System.out.print("main2: ");
         double celsius = scanner.nextDouble();
 
         // Расчёт по Фаренгейту
