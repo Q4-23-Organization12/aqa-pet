@@ -1,3 +1,5 @@
+package hw05;
+
 public class Task6RectangularTriangle {
     public static void main(String[] args) {
         // Стороны треугольника

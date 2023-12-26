@@ -1,3 +1,5 @@
+package hw05;
+
 import java.util.Scanner;
 
 public class Task5TemperatureConverter {
