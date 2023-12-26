@@ -2,19 +2,18 @@ package hw06;
 import  java.util.Scanner;
 public class CheckOddEven {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in); // Создаем объект Scanner для считывания ввода
-        System.out.print("Enter a number: "); // Печатаем текст с подсказкой
-        int number = scanner.nextInt(); // Анализ числа
-        /*int number = scanner.nextInt(): Считывание значение кот ввели с клавиатуры и сохранение его в переменной
-        number.*/
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
 
         if (number % 2 == 0) {
-            System.out.println("Even number"); // Если число четное, печатаем "Even number"
+            System.out.println("Even number");
         } else {
-            System.out.println("Odd number"); // Если число дробное, печатаем "Odd number"
+            System.out.println("Odd number");
         }
 
-        System.out.println("BYE"); // Печатаем "BYE" перед завершением программы
+        System.out.println("BYE");
+
         scanner.close();
     }
 }

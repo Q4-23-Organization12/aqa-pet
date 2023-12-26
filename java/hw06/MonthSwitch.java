@@ -5,9 +5,7 @@ public class MonthSwitch {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a number (1-12): ");
         int month = scanner.nextInt();
-        // Проверяем, является ли введенное значение допустимым месяцем (от 1 до 12)
         if (month >= 1 && month <= 12) {
-            // Используем конструкцию switch для определения аббревиатуры месяца
             switch (month) {
                 case 1:
                     System.out.println("JAN");
@@ -47,7 +45,6 @@ public class MonthSwitch {
                     break;
             }
         } else {
-            // Если введенное значение не является допустимым месяцем, выводим сообщение об ошибке
             System.out.println("Not a valid month");
         }
         scanner.close();

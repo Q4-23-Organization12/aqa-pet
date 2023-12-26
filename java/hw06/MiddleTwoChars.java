@@ -5,7 +5,6 @@ public class MiddleTwoChars {
         String[] strings = {
                 "MercedesBenz",
                 "Ford",
-                "Volkswagen",
                 "Toyota",
                 "Alfa Romeo"
         };

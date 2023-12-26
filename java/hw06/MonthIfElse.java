@@ -5,10 +5,8 @@ public class MonthIfElse {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a number (1-12): ");
         int month = scanner.nextInt();
-        // Проверяем, является ли введенное значение допустимым месяцем (от 1 до 12)
+
         if (month >= 1 && month <= 12) {
-            // В зависимости от значения месяца выводим соответствующую аббревиатуру
-            // месяц больше или равен 1 И месяц меньше или равен 12
             if (month == 1) {
                 System.out.println("JAN");
             } else if (month == 2) {
@@ -34,8 +32,8 @@ public class MonthIfElse {
             } else if (month == 12) {
                 System.out.println("DEC");
             }
+
         } else {
-            // Если введенное значение не является допустимым месяцем, выводим сообщение об ошибке
             System.out.println("Not a valid month");
         }
         scanner.close();

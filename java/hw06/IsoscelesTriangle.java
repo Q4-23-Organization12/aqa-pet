@@ -13,7 +13,7 @@ public class IsoscelesTriangle {
         int number3 = scanner.nextInt();
 
         if ((number1 == number2 && number1 != number3) || (number1 == number3 && number3 != number2) || (number2 == number3 && number2 != number1)) {
-            System.out.println("Isosceles Triangle!");
+            System.out.println("Isosceles Triangle");
         } else {
             System.out.println("Triangle Not Isosceles");
 
