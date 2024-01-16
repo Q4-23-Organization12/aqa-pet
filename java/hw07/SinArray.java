@@ -14,7 +14,7 @@ public class SinArray {
         printArray(sinValues);
     }
 
-    private static void printArray(double[] array) {
+    public static void printArray(double[] array) {
         System.out.println("The value of sin(x) from 0 to 360 in steps of 10:");
 
         for (int i = 0, x = 0; i < array.length; i++, x += 10) {

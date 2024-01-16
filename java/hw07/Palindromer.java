@@ -13,7 +13,7 @@ public class Palindromer {
             System.out.println("no palindrome");
         }
     }
-    private static boolean isPalindrome(String str) {
+    public static boolean isPalindrome(String str) {
         char[] charArray = str.toCharArray();
 
         int a = 0;
