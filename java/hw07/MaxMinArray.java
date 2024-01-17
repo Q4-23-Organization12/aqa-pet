@@ -9,7 +9,7 @@ public class MaxMinArray {
         System.out.println("Max number: " + maxNumber);
         System.out.println("Min number: " + minNumber);
     }
-    private static int findMaxNumber(int[] array) {
+    public static int findMaxNumber(int[] array) {
         int maxNumber = array[0];
 
         for (int i = 1; i < array.length; i++) {
@@ -19,7 +19,7 @@ public class MaxMinArray {
         }
         return maxNumber;
     }
-    private static int findMinNumber(int[] array) {
+    public static int findMinNumber(int[] array) {
         int minNumber = array[0];
 
         for (int i = 1; i < array.length; i++) {
