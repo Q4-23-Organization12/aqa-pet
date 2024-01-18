@@ -35,22 +35,21 @@ public class DataCalculation {
         System.out.println("Enter the second number:");
         double y = scanner.nextDouble();
 
-        // Perform basic operations
+
         System.out.println("Addition: " + calculator.add(x, y));
         System.out.println("Subtraction: " + calculator.subtract(x, y));
         System.out.println("Multiplication: " + calculator.multiply(x, y));
         System.out.println("Division: " + calculator.divide(x, y));
 
-        // Check if the calculator is an EngineeringCalculator
+
         if (calculator instanceof EngineeringCalculator) {
-            // Perform additional operation for EngineeringCalculator: Division by 100
+
             EngineeringCalculator engCalculator = (EngineeringCalculator) calculator;
             System.out.println("Division by 100: " + engCalculator.dividebyonehundred(x, y));
         }
 
-        // Check if the calculator is a ProgrammableCalculator
         if (calculator instanceof ProgrammableCalculator) {
-            // Perform additional operation for ProgrammableCalculator: Multiplication by 100
+
             ProgrammableCalculator progCalculator = (ProgrammableCalculator) calculator;
             System.out.println("Multiplication by 100: " + progCalculator.multiplybyonehundred(x, y));
         }
