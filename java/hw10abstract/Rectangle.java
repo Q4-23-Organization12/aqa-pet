@@ -1,4 +1,4 @@
-package hw09shape;
+package hw10abstract;
 
 import java.util.Arrays;
 
@@ -9,6 +9,11 @@ public class Rectangle extends Shape {
     public Rectangle(double[] sides, String color) {
         super("Rectangle", color);
         this.sides = Arrays.copyOf(sides, sides.length);
+    }
+
+    @Override
+    public String getName() {
+        return null;
     }
 
     @Override

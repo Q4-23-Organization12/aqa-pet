@@ -1,6 +1,10 @@
-package hw09shape;
+package hw10abstract;
 
 public class Circle extends Shape {
+    @Override
+    public String getName() {
+        return null;
+    }
 
     private double radius;
 

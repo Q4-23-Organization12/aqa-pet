@@ -1,14 +1,18 @@
-package hw09shape;
+package hw10abstract;
 
 import java.util.Arrays;
 
 public class Triangle extends Shape {
     private double[] sides;
 
-    // Конструктор
     public Triangle(double[] sides, String color) {
         super("Triangle", color);
         this.sides = Arrays.copyOf(sides, sides.length);
+    }
+
+    @Override
+    public String getName() {
+        return null;
     }
 
     @Override

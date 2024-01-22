@@ -1,35 +1,32 @@
-package hw09shape;
+package hw10abstract;
 
 import java.util.Objects;
 
-public class Shape {
+public abstract class Shape {
 
+    public abstract String getName();
 
     private String name;
     private String color;
-    private Object objects;
+
 
     public Shape(String name, String color) {
         this.name = name;
         this.color = color;
     }
 
-    public String getName() {
-        return name;
-    }
+    // Шаг 4: Абстрактный метод calculateArea() вместо заглушки
+    public abstract double calculateArea();
 
-    public double calculateArea() {
-        return 0.0;
-    }
+    // Шаг 5: Абстрактный метод calculatePerimeter() вместо заглушки
+    public abstract double calculatePerimeter();
 
-    public double calculatePerimeter() {
-        return 0.0;
-    }
-
+    // Шаг 6: Метод paint() без изменений
     public void paint() {
         System.out.println("Color: " + color);
     }
 
+    // Шаг 7: equals и hashCode без изменений
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;
@@ -42,8 +39,9 @@ public class Shape {
     @Override
     public int hashCode() {
         return Objects.hash(name, color);
-   }
+    }
 
+    // Шаг 8: toString без изменений
     @Override
     public String toString() {
         return "Shape{" +
@@ -51,5 +49,6 @@ public class Shape {
                 ", color='" + color + '\'' +
                 '}';
     }
+
 }
 
