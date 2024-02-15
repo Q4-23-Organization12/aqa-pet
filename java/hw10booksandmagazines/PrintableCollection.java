@@ -12,13 +12,17 @@ class PrintableCollection {
                 new Magazine("Vogue")
         };
 
-        System.out.println("Printing all items:");
-        for (Printable printable : printables) {
-            printable.print();
-        }
+        Printable printCollection = () -> {
+            System.out.println("Printing all items:");
+            for (Printable printable : printables) {
+                printable.print();
+            }
 
-        Book.printBooks(printables);
+            Book.printBooks(printables);
+            Magazine.printMagazines(printables);
+        };
 
-        Magazine.printMagazines(printables);
+        printCollection.print();
     }
 }
+
