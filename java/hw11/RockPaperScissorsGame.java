@@ -15,11 +15,11 @@ public class RockPaperScissorsGame {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Введите имя Игрока 1: ");
+        System.out.println("Введите имя Игрока #1: ");
         String player1Name = scanner.nextLine();
         Player player1 = new HumanPlayer(player1Name);
 
-        System.out.println("Введите имя Игрока 2: ");
+        System.out.println("Введите имя Игрока #2: ");
         String player2Name = scanner.nextLine();
         Player player2 = new HumanPlayer(player2Name);
 
@@ -58,12 +58,10 @@ public class RockPaperScissorsGame {
             System.out.println("Ничья.");
         }
 
-        // Запрос на повторение игры
         System.out.println("Продолжить игру? (1 - Да, 2 - Нет): ");
         int playAgainChoice = scanner.nextInt();
 
         while (playAgainChoice == 1) {
-            // Перезапуск игры
             main(args);
         }
 
