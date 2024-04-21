@@ -10,6 +10,8 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class ValidInvalidLogin {
 
+
+
     private WebDriver driver;
     private final String URL = "https://the-internet.herokuapp.com/login";
     private final String USERNAME = "tomsmith";
@@ -17,7 +19,7 @@ public class ValidInvalidLogin {
 
     @BeforeEach
     public void setUp() {
-        System.setProperty("selenium-chrome-driver-3.141.59", "D:\\Java\\aqa-pet\\hw17\\src\\main\\resources\\3.141.59");
+        System.setProperty("selenium-chrome-driver-3.141.59", "C:\\Users\\Andrey Grynko\\.m2\\repository\\org\\seleniumhq\\selenium\\selenium-chrome-driver\\3.141.59");
         driver = new ChromeDriver();
     }
 
@@ -35,6 +37,12 @@ public class ValidInvalidLogin {
         assertTrue(driver.findElement(By.id("flash")).getText().contains("Your username is invalid!"));
 
         Thread.sleep(3000);
+    }
+
+    @AfterEach
+    public void tearDown() {
+
+        driver.quit();
     }
 
     @Test
