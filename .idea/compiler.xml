@@ -1,13 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <directory url="file://$PROJECT_DIR$/hw16/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/untitled/src/main/resources/archetype-resources" includeSubdirectories="true" />
+    </excludeFromCompile>
     <annotationProcessing>
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="aqa-pet" />
+        <module name="SeleniumTests" />
+        <module name="hw17" />
+        <module name="hw16" />
+        <module name="hw18" />
+        <module name="apitests" />
+        <module name="archetype-resources" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="test" target="20" />
+      <module name="untitled" target="20" />
+      <module name="untitled1" target="20" />
+    </bytecodeTargetLevel>
   </component>
 </project>
